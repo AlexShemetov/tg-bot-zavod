@@ -63,6 +63,7 @@ class Bot:
                 update.effective_chat.id,
                 context.user_data
             )
+            context.user_data.clear()
             await query.edit_message_text("Хотите заполнить форму заново? /start")
             return
         context.user_data["param"] = query.data
