@@ -1,4 +1,7 @@
 # tg-bot-zavod
 
-pip install python-telegram-bot
-pip install dotenv
+python -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
